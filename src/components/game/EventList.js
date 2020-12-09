@@ -29,11 +29,10 @@ export const EventList = (props) => {
                                 })
                             }
                             @ {event.time}
-                            
                         </div>
                     </section>
                 })
             }
-        </article >
+        </article>
     )
 }
