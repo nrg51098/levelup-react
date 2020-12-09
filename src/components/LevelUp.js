@@ -8,8 +8,9 @@ import { Register } from "./auth/Register"
 export const LevelUp = () => (
     <>
         <Route render={() => {
+            console.log('worked');
             if (localStorage.getItem("lu_token")) {
-                return <>
+                return <>                    
                     <Route render={NavBar} />
                     <Route render={props => <ApplicationViews {...props} />} />
                 </>
